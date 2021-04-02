@@ -1,112 +1,66 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
+import React, { useEffect, useRef, useState } from 'react'
+import { SplashScreen, CourseScreen, HomeScreen } from './screens'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import { createDrawerNavigator } from '@react-navigation/drawer'
+import SharedStorage from './AsyncStorage'
+import { LogBox } from 'react-native';
+import DrawerHeader from './components/DrawerHeader'
 
-import React from 'react';
-import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+const Stack = createStackNavigator()
+const Drawer = createDrawerNavigator()
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+LogBox.ignoreLogs([
+    'Warning: isMounted(...) is deprecated'
+])
 
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
+const AppNavigator = () => {
+    return (
+        <Drawer.Navigator initialRouteName="Home">
+            <Drawer.Screen name="Home" component={HomeScreen} />
+        </Drawer.Navigator>
+    )
+}
 
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
+    const isMountedVal = useRef(1)
+    const [isSplash, setSplash] = useState(true)
+    const [courseSelected, setCourseSelected] = useState(null)
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+    const splashTimeout = () => {
+        if(isMountedVal.current) {
+            setSplash(false)
+        }
+    }
 
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
+    useEffect(() => {
+        if (!courseSelected) {
+            SharedStorage.getCourse().then(selectedCourse => {
+                if(isMountedVal.current) {
+                    setCourseSelected(selectedCourse)
+                }
+            })
+        }
+        setTimeout(splashTimeout, 3000)
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+        return () => {
+            isMountedVal.current = 0
+            clearTimeout(splashTimeout)
+        };
+    }, [])
+
+    if(isSplash) {
+        return <SplashScreen />
+    }
+    return (
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName={courseSelected!=null?"HomeScreen":"SelectCourse"}>
+                <Stack.Screen name="SelectCourse" component={CourseScreen} options={({route})=>({headerTitle: "Select Course"})} />
+                <Stack.Screen name="HomeScreen" component={AppNavigator}  options={({route}) => ({header: () => <DrawerHeader title="Home" subtitle={courseSelected.title + " Programming"} />})} />
+                <Stack.Screen name="ChangeCourse" component={CourseScreen} options={({route}) => ({headerTitle: "Change Course"})} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    )
+}
 
 export default App;
