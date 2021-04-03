@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { View, Text, FlatList, Image, ScrollView } from 'react-native'
-import { Link } from '@react-navigation/native'
 import SharedStorage from '../AsyncStorage'
 import Introduction from '../assets/images/introduction.png'
 import Syllabus from '../assets/images/syllabus.png'
@@ -14,21 +13,36 @@ import Interview from '../assets/images/interview.png'
 import ProgrammingBooks from '../assets/images/programming_books.png'
 import CodeCompiler from '../assets/images/code_compiler.png'
 import Video from '../assets/images/video.png'
+import Youtube from '../assets/images/youtube.png'
+import Telegram from '../assets/images/telegram.png'
+import Whatsapp from '../assets/images/whatsapp.png'
 import styles from '../assets/styles'
 
 const ModuleCard = (props) => {
     return (
-        <View style={props.isLarge ? styles.largeModuleCard : styles.topModuleCard}>
-            {
-                props.isLarge ? (
-                    <Image source={props.item.logo} style={styles.largeModuleImage} />
-                ) : (
-                    <View style={styles.topModuleImageLayout}>
-                        <Image source={props.item.logo} style={styles.topModuleImage} />
-                    </View>
-                )
-            }
-            <Text style={props.isLarge? styles.largeModuleText : styles.topModuleText}>{props.item.title}</Text>
+        <View style={styles.topModuleCard}>
+            <View style={styles.topModuleImageLayout}>
+                <Image source={props.item.logo} style={styles.topModuleImage} />
+            </View>
+            <Text style={styles.topModuleText}>{props.item.title}</Text>
+        </View>
+    )
+}
+
+const LargeModuleCard = (props) => {
+    return (
+        <View key={props.item.id} style={styles.largeModuleCard}>
+            <Image source={props.item.logo} style={styles.largeModuleImage} />
+            <Text style={styles.largeModuleText}>{props.item.title}</Text>
+        </View>
+    )
+}
+
+const TechCard = (props) => {
+    return (
+        <View style={styles.techCard}>
+            <Image source={props.item.logo} style={styles.techImage} />
+            <Text style={styles.techText}>{props.item.title}</Text>            
         </View>
     )
 }
@@ -77,8 +91,14 @@ const HomeScreen = () => {
         ]
     ]
 
+    let tech_items = [
+        {id: 1, title: 'Tech support', logo: Youtube},
+        {id: 2, title: 'Telegram group', logo: Telegram},
+        {id: 3, title: 'Whatsapp group', logo: Whatsapp}
+    ]
+
     return (
-        <ScrollView>
+        <ScrollView style={styles.homeBackground}>
             <FlatList
                 style={styles.topModuleList}
                 horizontal={true}
@@ -92,12 +112,19 @@ const HomeScreen = () => {
                     return (
                         <View style={styles.moduleRow}>
                             {
-                                row.map(item => <ModuleCard item={item} isLarge={true} />)
+                                row.map(item => <LargeModuleCard item={item} />)
                             }
                         </View>
                     )
                 })
             }
+            </View>
+            <View style={styles.techList}>
+                <TechCard item={tech_items[0]} />
+                <View style={styles.verticalSeprator} />
+                <TechCard item={tech_items[1]} />
+                <View style={styles.verticalSeprator} />
+                <TechCard item={tech_items[2]} />
             </View>
         </ScrollView>
     )

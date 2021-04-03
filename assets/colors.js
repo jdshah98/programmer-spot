@@ -3,7 +3,9 @@ const Colors = {
     colorPrimaryDark: '#3700B3',
     white: '#FFFFFF',
     black: '#000000',
-    transparent: '#FF000000'
+    transparent: '#FF000000',
+    lightPurple: '#C5C3F8',
+    gray: '#888888'
 }
 
 export default Colors;

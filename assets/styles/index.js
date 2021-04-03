@@ -73,14 +73,19 @@ const styles = StyleSheet.create({
         height: 8,
         backgroundColor: Colors.transparent
     },
+    homeBackground: {
+        backgroundColor: Colors.lightPurple
+    },
     topModuleList: {
         backgroundColor: Colors.colorPrimary,
         paddingHorizontal: 8,
-        paddingVertical: 12
+        paddingVertical: 12,
+        marginBottom: 8
     },
     largeModuleList: {
         backgroundColor: Colors.white,
-        padding: 8
+        padding: 8,
+        marginBottom: 16
     },
     topModuleCard: {
         width: 108,
@@ -92,8 +97,7 @@ const styles = StyleSheet.create({
         width: 108,
         flex: 1,
         justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: Colors.white
+        alignItems: "center"
     },
     topModuleImageLayout: {
         width: 48,
@@ -111,7 +115,8 @@ const styles = StyleSheet.create({
     },
     largeModuleImage: {
         width: 72,
-        height: 72
+        height: 72,
+        marginBottom: 4
     },
     topModuleText: {
         color: Colors.white
@@ -129,6 +134,33 @@ const styles = StyleSheet.create({
     moduleRow: {
         flexDirection: 'row',
         marginVertical: 10
+    },
+    menuIcon: {
+        color: Colors.white,
+        marginEnd: 16
+    },
+    techList: {
+        backgroundColor: Colors.white,
+        padding: 8,
+        flexDirection: 'row',
+        justifyContent: 'space-evenly'
+    },
+    techCard: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    techImage: {
+        width: 48,
+        height: 48
+    },
+    techText: {
+        color: Colors.black,
+        fontSize: 12
+    },
+    verticalSeprator: {
+        backgroundColor: Colors.gray,
+        width: 2
     }
 })
 
