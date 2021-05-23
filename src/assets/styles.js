@@ -1,16 +1,7 @@
-import { StyleSheet } from "react-native";
-import Colors from "../colors";
+import { StyleSheet } from "react-native"
+import Colors from "./colors"
 
 const styles = StyleSheet.create({
-    splashContainer: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    splashLogo: {
-        width: 175,
-        height: 175
-    },
     toolbarView: {
         height: 64,
         backgroundColor: Colors.colorPrimary,
@@ -33,9 +24,6 @@ const styles = StyleSheet.create({
         fontWeight: "600",
         color: Colors.white
     },
-    courseList: {
-        margin: 12
-    },
     courseCard: {
         flexDirection: 'row',
         alignItems: 'center',
@@ -52,26 +40,6 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40,
         marginEnd: 8
-    },
-    courseContinueButton: {
-        width: 150,
-        height: 50,
-        backgroundColor: Colors.colorPrimary,
-        borderRadius: 25,
-        alignItems: "center",
-        justifyContent: "center",
-        elevation: 4,
-        alignSelf: "center",
-        marginBottom: 16
-    },
-    courseContinueButtonText: {
-        color: Colors.white,
-        fontSize: 16
-    },
-    courseSeperator: {
-        width: '100%',
-        height: 8,
-        backgroundColor: Colors.transparent
     },
     homeBackground: {
         backgroundColor: Colors.lightPurple
@@ -138,6 +106,10 @@ const styles = StyleSheet.create({
     menuIcon: {
         color: Colors.white,
         marginEnd: 16
+    },
+    searchIcon: {
+        color: Colors.white,
+        marginEnd: 8
     },
     techList: {
         backgroundColor: Colors.white,

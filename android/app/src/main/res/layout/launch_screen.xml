@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="175dp" 
+        android:layout_height="175dp" 
+        android:src="@drawable/launch_screen" 
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+    />
+
+    <TextView
+        android:id="@+id/splashTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/splashLogo"
+        android:layout_marginTop="16dp"
+    />
+
+    <TextView
+        android:id="@+id/splashTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jainam Shah"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/splashTextView1"
+        android:layout_marginTop="16dp"
+    />
+
+</RelativeLayout>
