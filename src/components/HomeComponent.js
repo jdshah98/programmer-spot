@@ -43,8 +43,6 @@ const ModuleView = React.memo(({ modules }) => {
 })
 
 const HomeScreen = () => {
-    const selectedCourse = useSelector(state => state.selectedCourse)
-
     const items = [
         {id: 1, title: 'Introduction', logo: Introduction},
         {id: 2, title: 'Syllabus', logo: Syllabus},
@@ -89,9 +87,6 @@ const HomeScreen = () => {
                 <TechCard item={tech_items[1]} />
                 <View style={styles.verticalSeprator} />
                 <TechCard item={tech_items[2]} />
-            </View>
-            <View>
-                <Text>Selected Course: {selectedCourse.title}</Text>
             </View>
         </ScrollView>
     )

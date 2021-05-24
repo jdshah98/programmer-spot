@@ -67,6 +67,10 @@ const ChangeCourseComponent = (props) => {
 
     return (
         <>
+            <View style={{ backgroundColor: Colors.white, paddingHorizontal: 16, paddingVertical: 4 }}>
+                <Text style={{ fontWeight: 'bold', fontSize: 16 }}>Select Course &amp; Press Continue</Text>
+                <Text>You can change it at any time</Text>
+            </View>
             <FlatList
                 style={styles.courseList}
                 data={items}
