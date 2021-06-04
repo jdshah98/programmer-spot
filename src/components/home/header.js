@@ -6,21 +6,23 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         height: 56,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.colorPrimary,
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 16
     },
     menuIcon: {
-        marginEnd: 16
+        marginEnd: 16,
+        color: Colors.white
     },
     title: {
-        fontSize: 16
+        fontSize: 16,
+        color: Colors.white
     },
     subtitle: {
-        fontSize: 12
+        fontSize: 12,
+        color: Colors.white
     }
 })
 

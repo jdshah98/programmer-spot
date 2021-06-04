@@ -42,9 +42,9 @@ const ModuleView = React.memo(({ modules }) => {
     )
 })
 
-const HomeScreen = () => {
+const HomeScreen = (props) => {
     const items = [
-        {id: 1, title: 'Introduction', logo: Introduction},
+        {id: 1, title: 'Introduction', logo: Introduction, navigateTo: 'Introduction'},
         {id: 2, title: 'Syllabus', logo: Syllabus},
         {id: 3, title: 'Bookmark', logo: Bookmark},
         {id: 4, title: 'Books', logo: Books},
@@ -77,7 +77,7 @@ const HomeScreen = () => {
                 style={styles.topModuleList}
                 horizontal={true}
                 data={items}
-                renderItem={({item}) => <NavModuleCard item={item} />}
+                renderItem={({item}) => <NavModuleCard item={item} navigation={props.navigation} />}
             />
             <Text style={styles.moduleListSeperatorText}>Start Learning</Text>
             <ModuleView modules={modules} />

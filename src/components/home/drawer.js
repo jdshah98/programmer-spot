@@ -8,26 +8,35 @@ import {
     python_language_logo
 } from '../../assets/images'
 import { useSelector } from 'react-redux'
+import Icon from 'react-native-vector-icons/Entypo'
 
 const styles = StyleSheet.create({
     container: {
         flex: 1
     },
-    drawerLink: {
-        backgroundColor: Colors.light_gray,
-        height: 48,
-        justifyContent: 'center',
-    },
-    drawerLinkText: {
-        fontSize: 18,
-        paddingStart: 5
-    },
-    margin_5: {
-        margin: 5
-    },
     drawerHeader: {
         backgroundColor: Colors.colorPrimary,
-        padding: 10,
+        padding: 16,
+    },
+    drawerLink: {
+        height: 48,
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingHorizontal: 16,
+        marginVertical: 8
+    },
+    drawerLinkIcon: {
+        fontSize: 24
+    },
+    drawerLinkText: {
+        fontSize: 14,
+        paddingStart: 16,
+        flex: 1,
+        color: Colors.darkGray
+    },
+    drawerArrayIcon: {
+        color: Colors.gray,
+        fontSize: 18
     },
     logoParent: {
         width: 50,
@@ -44,11 +53,11 @@ const styles = StyleSheet.create({
     },
     changeLanguageLink: {
         backgroundColor: Colors.white,
-        borderRadius: 15,
-        height: 28,
-        paddingStart: 5,
-        paddingVertical: 2,
-        width: 120,
+        borderRadius: 18,
+        height: 36,
+        paddingHorizontal: 16,
+        paddingVertical: 5,
+        width: 150,
         marginStart: 10,
         fontSize: 16
     },
@@ -91,17 +100,59 @@ const CustomDrawer = (props) => {
                         <Text style={styles.changeLanguageLink} numberOfLines={1}>Change Language</Text>
                     </TouchableOpacity>
                 </View>
-                <Text style={{ color: Colors.white }}>Programmer Spot</Text>
+                <Text style={{ color: Colors.white, marginTop: 8 }}>Programmer Spot</Text>
                 <Text style={{ color: Colors.white }}>help@shahstudio.com</Text>
             </View>
-            {/* <TouchableOpacity style={styles.margin_5} onPress={() => {
-                props.navigation.navigate("ChangeCourse")
+            <TouchableOpacity onPress={() => {
+                // props.navigation.navigate("AboutApp")
                 props.navigation.closeDrawer()
             }}>
                 <View style={styles.drawerLink}>
-                    <Text style={styles.drawerLinkText}>Change Course</Text>
+                    <Icon style={styles.drawerLinkIcon} name="info-with-circle" />
+                    <Text style={styles.drawerLinkText}>About App</Text>
+                    <Icon style={styles.drawerArrayIcon} name="chevron-right" />
                 </View>
-            </TouchableOpacity> */}
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+                // props.navigation.navigate("AboutApp")
+                props.navigation.closeDrawer()
+            }}>
+                <View style={styles.drawerLink}>
+                    <Icon style={styles.drawerLinkIcon} name="user" />
+                    <Text style={styles.drawerLinkText}>About Us</Text>
+                    <Icon style={styles.drawerArrayIcon} name="chevron-right" />
+                </View>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+                // props.navigation.navigate("AboutApp")
+                props.navigation.closeDrawer()
+            }}>
+                <View style={styles.drawerLink}>
+                    <Icon style={styles.drawerLinkIcon} name="mail" />
+                    <Text style={styles.drawerLinkText}>Feedback</Text>
+                    <Icon style={styles.drawerArrayIcon} name="chevron-right" />
+                </View>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+                // props.navigation.navigate("AboutApp")
+                props.navigation.closeDrawer()
+            }}>
+                <View style={styles.drawerLink}>
+                    <Icon style={styles.drawerLinkIcon} name="lock" />
+                    <Text style={styles.drawerLinkText}>Terms &amp; Privacy Policy</Text>
+                    <Icon style={styles.drawerArrayIcon} name="chevron-right" />
+                </View>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+                // props.navigation.navigate("AboutApp")
+                props.navigation.closeDrawer()
+            }}>
+                <View style={styles.drawerLink}>
+                    <Icon style={styles.drawerLinkIcon} name="share" />
+                    <Text style={styles.drawerLinkText}>Share</Text>
+                    <Icon style={styles.drawerArrayIcon} name="chevron-right" />
+                </View>
+            </TouchableOpacity>
         </View>
     )
 }
