@@ -1,0 +1,26 @@
+<View>
+	<Text type="para">Intro_Main_Para</Text>
+	
+	<Text type="heading">Intro_Sub_Heading_1</Text>
+	<Text type="para">Intro_Sub_Para_1_1</Text>
+	<Text type="para">Intro_Sub_Para_1_2</Text>
+	<MyUlist type="list" data="Intro_Sub_List_1" />
+	
+	<Text type="heading">Intro_Sub_Heading_2</Text>
+	<Text type="para">Intro_Sub_Para_2</Text>
+	<MyUlist type="list" data="Intro_Sub_List_2" />
+
+	<Text type="heading">Intro_Sub_Heading_3</Text>
+	<Text type="para">Intro_Sub_Para_3</Text>
+	<MyCode type="code" data="Intro_Sub_Code_3" />
+	
+	<Text type="heading">Intro_Sub_Heading_4</Text>
+	<Text type="para">Intro_Sub_Para_4</Text>
+	<MyUlist type="list" data="Intro_Sub_List_4" />
+	
+	<Text type="heading">Intro_Sub_Heading_5</Text>
+	<Text type="para">Intro_Sub_Para_5</Text>
+
+	<Text type="heading">Intro_Sub_Heading_6</Text>
+	<Text type="para">Intro_Sub_Para_6</Text>
+</View>

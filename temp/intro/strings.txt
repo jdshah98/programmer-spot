@@ -1,0 +1,366 @@
+============================================================= C Language Tutorial ===================================================================================
+
+Intro_Main_Para -> C programming is a general-purpose, procedural, imperative computer programming language developed in 1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most widely used computer language. It keeps fluctuating at number one scale of popularity along with Java programming language, which is also equally popular and most widely used among modern software programmers.
+
+Intro_Sub_Heading_1 -> Why to Learn C Programming?
+
+Intro_Sub_Para_1 -> C programming language is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning C Programming:
+
+Intro_Sub_List_1 -> [
+	Easy to learn,
+	Structured language,
+	It produces efficient programs,
+	It can handle low-level activities,
+	It can be compiled on a variety of computer platforms
+]
+
+Intro_Sub_Heading_2 -> Facts about C
+
+Intro_Sub_List_2 -> [
+	C was invented to write an operating system called UNIX.,
+	C is a successor of B language which was introduced around the early 1970s.,
+	The language was formalized in 1988 by the American National Standard Institute (ANSI).,
+	The UNIX OS was totally written in C.,
+	Today C is the most widely used and popular System Programming Language.,
+	Most of the state-of-the-art software have been implemented using C.
+]
+
+Intro_Sub_Heading_3 -> Hello World using C Programming.
+
+Intro_Sub_Para_3 -> Just to give you a little excitement about C programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.
+
+Intro_Sub_Code_3 -> 
+(
+	#include <stdio.h>
+
+	int main() {
+	   /* my first program in C */
+	   printf("Hello, World! \n");
+	   
+	   return 0;
+	}
+)
+
+Intro_Sub_Heading_4 -> Applications of C Programming
+
+Intro_Sub_Para_4 -> C was initially used for system development work, particularly the programs that make-up the operating system. C was adopted as a system development language because it produces code that runs nearly as fast as the code written in assembly language. Some examples of the use of C are -
+
+Intro_Sub_List_4 -> [
+	Operating Systems,
+	Language Compilers,
+	Assemblers,
+	Text Editors,
+	Print Spoolers,
+	Network Drivers,
+	Modern Programs,
+	Databases,
+	Language Interpreters,
+	Utilities
+]
+
+Intro_Sub_Heading_5 -> Audience
+
+Intro_Sub_Para_5 -> This tutorial is designed for software programmers with a need to understand the C programming language starting from scratch. This C tutorial will give you enough understanding on C programming language from where you can take yourself to higher level of expertise.
+
+Intro_Sub_Heading_6 -> Prerequisites
+
+Intro_Sub_Para_6 -> Before proceeding with this tutorial, you should have a basic understanding of Computer Programming terminologies. A basic understanding of any of the programming languages will help you in understanding the C programming concepts and move fast on the learning track.
+
+================================================================================================================================================================================================================
+
+============================================================= CPP Language Tutorial ===================================================================================
+
+Intro_Main_Para -> C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This C++ tutorial adopts a simple and practical approach to describe the concepts of C++ for beginners to advanded software engineers.
+
+Intro_Sub_Heading_1 -> Why to Learn C++
+
+Intro_Sub_Para_1_1 -> C++ is a MUST for students and working professionals to become a great Software Engineer. I will list down some of the key advantages of learning C++:
+
+Intro_Sub_List_1 -> [
+    C++ is very close to hardware, so you get a chance to work at a low level which gives you lot of control in terms of memory management, better performance and finally a robust software development.,
+    C++ programming gives you a clear understanding about Object Oriented Programming. You will understand low level implementation of polymorphism when you will implement virtual tables and virtual table pointers, or dynamic type identification.,
+    C++ is one of the every green programming languages and loved by millions of software developers. If you are a great C++ programmer then you will never sit without work and more importantly you will get highly paid for your work.,
+    C++ is the most widely used programming languages in application and system programming. So you can choose your area of interest of software development.,
+    C++ really teaches you the difference between compiler, linker and loader, different data types, storage classes, variable types their scopes etc.
+]
+
+Intro_Sub_Para_1_2 -> There are 1000s of good reasons to learn C++ Programming. But one thing for sure, to learn any programming language, not only C++, you just need to code, and code and finally code until you become expert.
+
+Intro_Sub_Heading_2 -> Hello World using C++
+
+Intro_Sub_Para_2_1 -> Just to give you a little excitement about C++ programming, I'm going to give you a small conventional C++ Hello World program, You can try it using Demo link
+
+Intro_Sub_Para_2_2 -> C++ is a super set of C programming with additional implementation of object-oriented concepts.
+
+Intro_Sub_Code_2 -> 
+{
+    #include <iostream>
+    using namespace std;
+
+    // main() is where program execution begins.
+    int main() {
+        cout << "Hello World"; // prints Hello World
+        return 0;
+    }
+}
+
+Intro_Sub_Para_2_3 -> There are many C++ compilers available which you can use to compile and run above mentioned program:
+
+Intro_Sub_List_2 -> [
+    Apple C++. Xcode,
+    Bloodshed Dev-C++,
+    Clang C++,
+    Cygwin (GNU C++),
+    Mentor Graphics,
+    MINGW - "Minimalist GNU for Windows",
+    GNU CC source,
+    IBM C++,
+    Intel C++,
+    Microsoft Visual C++,
+    Oracle C++,
+    HP C++
+]
+
+Intro_Sub_Para_2_4 -> It is really impossible to give a complete list of all the available compilers. The C++ world is just too large and too much new is happening.
+
+Intro_Sub_Heading_3 -> Applications of C++ Programming
+
+Intro_Sub_Para_3_1 -> As mentioned before, C++ is one of the most widely used programming languages. It has it's presence in almost every area of software development. I'm going to list few of them here:
+
+Intro_Sub_List_3 -> [
+    {
+        title: Application Software Development,
+        subject: C++ programming has been used in developing almost all the major Operating Systems like Windows, Mac OSX and Linux. Apart from the operating systems, the core part of many browsers like Mozilla Firefox and Chrome have been written using C++. C++ also has been used in developing the most popular database system called MySQL.
+    },
+    {
+        title: Programming Languages Development,
+        subject: C++ has been used extensively in developing new programming languages like C#, Java, JavaScript, Perl, UNIX’s C Shell, PHP and Python, and Verilog etc.
+    },
+    {
+        title: Computation Programming,
+        subject: C++ is the best friends of scientists because of fast speed and computational efficiencies.
+    },
+    {
+        title: Games Development,
+        subject: C++ is extremely fast which allows programmers to do procedural programming for CPU intensive functions and provides greater control over hardware, because of which it has been widely used in development of gaming engines.
+    },
+    {
+        title: Embedded System,
+        subject: C++ is being heavily used in developing Medical and Engineering Applications like softwares for MRI machines, high-end CAD/CAM systems etc.
+    },
+]
+    
+Intro_Sub_Para_3_2 -> This list goes on, there are various areas where software developers are happily using C++ to provide great softwares. I highly recommend you to learn C++ and contribute great softwares to the community.
+
+Intro_Sub_Heading_4 -> Audience
+
+Intro_Sub_Para_4 -> This C++ tutorial has been prepared for the beginners to help them understand the basic to advanced concepts related to C++.
+
+Intro_Sub_Heading_5 -> Prerequisites
+
+Intro_Sub_Para_5 -> Before you start practicing with various types of examples given in this C++ tutorial,we are making an assumption that you are already aware of the basics of computer program and computer programming language.
+
+================================================================================================================================================================================================================
+
+============================================================= Java Language Tutorial ===================================================================================
+
+Intro_Main_Para -> Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Java. This reference will take you through simple and practical approaches while learning Java Programming language.
+
+Intro_Sub_Heading_1 -> Why to Learn java Programming?
+
+Intro_Sub_Para_1 -> Java is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Java Programming:
+
+Intro_Sub_List_1 -> [
+    {
+        title: Object Oriented,
+	    subject: In Java, everything is an Object. Java can be easily extended since it is based on the Object model.
+    },
+    {
+        title: Platform Independent,
+	    subject: Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+    },
+    {
+        title: Simple,
+	    subject: Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.
+    },
+    {
+        title: Secure,
+	    subject: With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+    },
+    {
+        title: Architecture-neutral,
+	    subject: Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.
+    },
+    {
+        title: Portable,
+	    subject: Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset.
+    },
+    {
+        title: Robust,
+	    subject: Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.
+    },
+]
+
+Intro_Sub_Heading_2 -> Hello World using Java Programming.
+
+Intro_Sub_Para_2 -> Just to give you a little excitement about Java programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.
+
+Intro_Sub_Code_2 ->
+{
+    public class MyFirstJavaProgram {
+
+    /* This is my first java program.
+     * This will print 'Hello World' as the output
+     */
+
+    public static void main(String []args) {
+        System.out.println("Hello World"); // prints Hello World
+    }
+    }
+}
+
+Intro_Sub_Heading_3 -> Applications of Java Programming
+
+Intro_Sub_Para_3_1 -> The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.
+
+Intro_Sub_Para_3_2 -> The new J2 versions were renamed as Java SE, Java EE, and Java ME respectively. Java is guaranteed to be Write Once, Run Anywhere.
+
+Intro_Sub_List_3 -> [
+    {
+        title: Multithreaded,
+	    subject: With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
+    },
+    {
+        title: Interpreted,
+	    subject: Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
+    },
+    {
+        title: High Performance,
+	    subject: With the use of Just-In-Time compilers, Java enables high performance.
+    },
+    {
+        title: Distributed,
+	    subject: Java is designed for the distributed environment of the internet.
+    },
+    {
+        title: Dynamic,
+	    subject: Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.
+    },
+]
+
+Intro_Sub_Heading_4 -> Audience
+
+Intro_Sub_Para_4 -> This tutorial has been prepared for the beginners to help them understand the basic to advanced concepts related to Java Programming language.
+
+Intro_Sub_Heading_5 -> Prerequisites
+
+Intro_Sub_Para_5 -> Before you start practicing various types of examples given in this reference, we assume that you are already aware about computer programs and computer programming languages.
+
+================================================================================================================================================================================================================
+
+============================================================= Python Language Tutorial ===================================================================================
+
+Intro_Main_Para -> Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). This tutorial gives enough understanding on Python programming language.
+
+Intro_Sub_Heading_1 -> Why to Learn Python?
+
+Intro_Sub_Para_1_1 -> Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
+
+Intro_Sub_Para_1_2 -> Python is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning Python:
+
+Intro_Sub_List_1 -> [
+    {
+        title: Python is Interpreted,
+        subject: Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.
+    },
+    {
+        title: Python is Interactive,
+        subject: You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.
+    },
+    {
+        title: Python is Object-Oriented,
+        subject: Python supports Object-Oriented style or technique of programming that encapsulates code within objects.
+    },
+    {
+        title: Python is a Beginner's Language,
+        subject: Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.
+    },
+]
+
+Intro_Sub_Heading_2 -> Characteristics of Python
+
+Intro_Sub_Para_2 -> Following are important characteristics of Python Programming −
+
+Intro_Sub_List_2 -> [
+    It supports functional and structured programming methods as well as OOP.,
+    It can be used as a scripting language or can be compiled to byte-code for building large applications.,
+    It provides very high-level dynamic data types and supports dynamic type checking.,
+    It supports automatic garbage collection.,
+    It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.
+]
+
+Intro_Sub_Heading_3 -> Hello World using Python.
+
+Intro_Sub_Para_3 -> Just to give you a little excitement about Python, I'm going to give you a small conventional Python Hello World program, You can try it using Demo link.
+
+Intro_Sub_Code_3 ->
+{
+    print ("Hello, Python!");
+}
+
+Intro_Sub_Heading_4 -> Applications of Python
+
+Intro_Sub_Para_4 -> As mentioned before, Python is one of the most widely used language over the web. I'm going to list few of them here:
+
+Intro_Sub_List_4 -> [
+    {
+        title: Easy-to-learn,
+        subject: Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.
+    },
+    {
+        title: Easy-to-read,
+        subject: Python code is more clearly defined and visible to the eyes.
+    },
+    {
+        title: Easy-to-maintain,
+        subject: Python's source code is fairly easy-to-maintain.
+    },
+    {
+        title: A broad standard library,
+        subject: Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.
+    },
+    {
+        title: Interactive Mode,
+        subject: Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.
+    },
+    {
+        title: Portable,
+        subject: Python can run on a wide variety of hardware platforms and has the same interface on all platforms.
+    },
+    {
+        title: Extendable,
+        subject: You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.
+    },
+    {
+        title: Databases,
+        subject: Python provides interfaces to all major commercial databases.
+    },
+    {
+        title: GUI Programming,
+        subject: Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.
+    },
+    {
+        title: Scalable,
+        subject: Python provides a better structure and support for large programs than shell scripting.
+    },
+]
+
+Intro_Sub_Heading_5 -> Audience
+
+Intro_Sub_Para_5 -> This Python tutorial is designed for software programmers who need to learn Python programming language from scratch.
+
+Intro_Sub_Heading_6 -> Prerequisites
+
+Intro_Sub_Para_6 -> You should have a basic understanding of Computer Programming terminologies. A basic understanding of any of the programming languages is a plus.
+
+================================================================================================================================================================================================================

@@ -1,0 +1,5 @@
+LD Player         => tcp:5555
+
+Bluestacks Player => 
+
+Nox Player        => 127.0.0.1:62001

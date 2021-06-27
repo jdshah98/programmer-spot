@@ -1,0 +1,91 @@
+C Language Syllabus
+
+Introduction and First Program
+    Why to Learn C Language
+    Facts of C Language
+    Hello World Program
+    Applications of C Language
+
+Environment Setup
+    Text Editor
+    Compiler
+    Installation on Unix/Linux
+    Installation on Mac OS
+    Installation on Windows
+
+Fundamentals of C Language
+    Basic Syntax
+    Program Structure
+
+Variables and Data types 
+    Data types
+    Variables
+    Constants
+    Storage Classes
+
+Console IO Operations
+    Printf and Scanf
+    Format Specifiers
+
+Operators and Expressions
+    Expressions and Arithmetic Operators
+    Relational and Logical Operators
+    Bitwise Operators
+
+Control Flow Statements
+    If Statement
+    Switch Statement
+    Unconditional Branching using goto statement
+    While Loop
+    Do While Loop
+    For Loop
+    Break and Continue
+    Special Cases
+
+Working with Functions
+    Introduction and Writing Functions
+    Scope of Variables, Storage Classes, Pass by Value and reference
+    Recursion
+
+Working with Arrays
+    Arrays Declaration and Initialization
+    Sample Programs using Arrays
+    Arrays as Function Parameters
+    2-Dimensional Array
+
+Pointers
+    Introduction to Pointers
+    Pointers as Function Parameter
+    Pointer Arithmetic
+    Pointers and Arrays
+    Function Pointers
+    Dynamic Memory Allocation using malloc
+    calloc and comparision with malloc
+
+String Handling
+    Introduction to Strings
+    Sample Program
+    More Sample Programs
+    Standard String Library Functions
+    Array of String
+
+Structures and Unions
+    Declaring and Instantiating Structures
+    Structure as Parameter and Pointer to Structure
+    Enumerated Data Type
+    Union
+    Bit Fields
+
+File Handling
+    What is a Stream
+    File Handling-Writing and Reading Characters
+    Writing and Reading Structure in Text Format
+    Writing and Reading in Binary Format
+
+Pre-Processor Directives
+    Understanding Pre-Processor directives
+    Header Files and ProjectCommand Line Arguments and Variable 
+
+Arguments
+    Command Line Argument
+    Variable Number of Arguments
